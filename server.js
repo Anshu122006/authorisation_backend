@@ -9,11 +9,11 @@ const mongoose = require("mongoose");
 const User = require("./models/user");
 const RefreshToken = require("./models/refreshToken");
 
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 
 const jwt = require("jsonwebtoken");
 
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 
 // let users = [];
 let refreshTokens = [];
