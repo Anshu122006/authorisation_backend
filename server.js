@@ -12,7 +12,7 @@ const user = require("./routes/user");
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-// app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "*" }));
 
 mongoose
   .connect(process.env.MONGO_URI)
