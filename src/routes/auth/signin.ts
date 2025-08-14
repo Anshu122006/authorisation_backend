@@ -52,7 +52,15 @@ router.post("/signin", async (req, res) => {
               status: "success",
               statusCode: 201,
               message: "logged-in successfully!",
-              data: { accessToken: accessToken, refreshToken: refreshToken },
+              data: {
+                accessToken: accessToken,
+                refreshToken: refreshToken,
+                user: {
+                  userId: user.id,
+                  name: user.firstname + " " + user.lastname,
+                  email: user.email,
+                },
+              },
             });
           } else {
             res.json({
@@ -99,7 +107,15 @@ router.post("/signin", async (req, res) => {
               status: "success",
               statusCode: 201,
               message: "logged-in successfully!",
-              data: { accessToken: accessToken, refreshToken: refreshToken },
+              data: {
+                accessToken: accessToken,
+                refreshToken: refreshToken,
+                user: {
+                  userId: user.id,
+                  name: user.firstname + " " + user.lastname,
+                  email: user.email,
+                },
+              },
             });
           }
         }
