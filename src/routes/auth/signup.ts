@@ -2,7 +2,7 @@ import express from "express";
 import dotevn from "dotenv";
 import bcrypt from "bcryptjs";
 // import User, { IUser } from "../../models/user";
-import { PrismaClient } from "../../generated/prisma";
+import { PrismaClient } from '@prisma/client';
 dotevn.config();
 
 const router = express.Router();
