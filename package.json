@@ -4,14 +4,15 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
   "build": "tsc",
   "dev": "nodemon --exec ts-node ./src/server.ts",
+  "prisma:deploy": "npx prisma migrate deploy --schema=prisma/schema.prisma",
   "start": "node dist/server.js",
-  "db:push": "npx prisma db push --schema=src/prisma/schema.prisma",
-  "generate": "npx prisma generate --schema=src/prisma/schema.prisma",
-  "prisma:deploy": "npx prisma migrate deploy --schema=src/prisma/schema.prisma"
-  "studio": "npx prisma studio"
- },
+  "db:push": "npx prisma db push --schema=prisma/schema.prisma",
+  "generate": "npx prisma generate --schema=prisma/schema.prisma",
+  "studio": "npx prisma studio --schema=prisma/schema.prisma"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
