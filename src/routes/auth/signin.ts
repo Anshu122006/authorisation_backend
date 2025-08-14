@@ -5,7 +5,7 @@ import jwt from "jsonwebtoken";
 import { OAuth2Client } from "google-auth-library";
 // import RefreshToken, { IRefreshToken } from "../../models/refreshToken";
 // import User, { IUser } from "../../models/user";
-import { PrismaClient } from '@prisma/client';;
+import { PrismaClient } from '@prisma/client';
 dotevn.config();
 
 const router = express.Router();
