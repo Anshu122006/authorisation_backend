@@ -133,7 +133,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "E:\\dev\\projects\\flutter\\e_commerce_app\\app_backend\\generated\\prisma",
+      "value": "E:\\dev\\projects\\flutter\\e_commerce_app\\app_backend\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -147,12 +147,12 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "E:\\dev\\projects\\flutter\\e_commerce_app\\app_backend\\prisma\\schema.prisma",
+    "sourceFilePath": "E:\\dev\\projects\\flutter\\e_commerce_app\\app_backend\\src\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
     "rootEnvPath": null,
-    "schemaEnvPath": "../../.env"
+    "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../../prisma",
   "clientVersion": "6.9.0",
