@@ -4,14 +4,12 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "node build.js",
-    "dev": "nodemon ./src/server.ts",
-    "db:push": "npx prisma db push",
-    "generate": "npx prisma generate",
-    "studio": "npx prisma studio"
-  },
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build": "tsc",
+  "dev": "nodemon --exec ts-node ./src/server.ts",
+  "prisma:deploy": "npx prisma migrate deploy",
+  "start": "node dist/server.js"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
