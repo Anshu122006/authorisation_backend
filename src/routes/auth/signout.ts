@@ -2,7 +2,7 @@ import express from "express";
 import dotevn from "dotenv";
 import bcrypt from "bcryptjs";
 // import RefreshToken, { IRefreshToken } from "../../models/refreshToken";
-import { PrismaClient } from "../../generated/prisma";
+import { PrismaClient } from '@prisma/client';
 import { Prisma } from "@prisma/client";
 dotevn.config();
 
