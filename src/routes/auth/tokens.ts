@@ -2,7 +2,7 @@ import { Request, Response, NextFunction, Router } from "express";
 import dotevn from "dotenv";
 import jwt, { JwtPayload } from "jsonwebtoken";
 // import RefreshToken, { IRefreshToken } from "../../models/refreshToken";
-import { PrismaClient } from "../../generated/prisma";
+import { PrismaClient } from '@prisma/client';
 dotevn.config();
 
 const router = Router();
